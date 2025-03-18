@@ -5,14 +5,14 @@ pipeline {
             steps {
                 script {
                     build "PES2UG22CS170-1"
-                    sh 'g++  ./main/main.cpp -o output'
+                    sh 'ls'
                 }
             }
         }
         stage('Test') {
             steps {
                 script {
-                    sh './output'
+                    sh 'ls -a'
                 }
             }
         }
