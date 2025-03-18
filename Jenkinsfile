@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     build "PES2UG22CS170-1"
-                    sh 'g++ hello.cpp -o output'
+                    sh 'g++ ./main/hello.cpp -o output'
                 }
             }
         }
